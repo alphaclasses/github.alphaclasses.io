@@ -1,0 +1,448 @@
+*
+{
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Arial , Helvetica ;
+}
+  
+header
+{
+  background-color: antiquewhite;
+  color: brown;
+}
+
+ul
+{
+  list-style-type: none;
+  padding: 0;
+  font-weight: 700;
+}
+
+li
+{
+  display: inline-block;
+  padding: 0 1rem;
+}
+  
+li a
+{
+  text-decoration: none;
+  color: tomato ;
+}
+
+li:hover a
+{
+  font-size: small;
+  color: black;
+}
+
+.navContainer
+{
+display : flex;
+justify-content : space-between;
+align-items : center;
+max-width : 70rem;
+margin : 0 auto;
+padding : 0 1rem;
+}
+
+.nav-toggle
+{
+  display : none;
+  position : absolute;
+  right : 1rem;
+  top : 1.4rem;
+  cursor : pointer;
+}
+
+.nav-toggle img
+{
+  width : 1.5rem;
+  transition : 300ms all ease;
+}
+
+.nav-toggle:hover img
+{
+  opacity : 0.7;
+}
+
+.open
+{
+  height: 100vh;
+}
+
+.hidden
+{
+  display: none;
+}
+
+.hide
+{
+  display: none;
+}
+.show
+{
+  display: block;
+}
+
+.mySlides
+{
+    display: none
+}
+
+.slideshow-container
+{
+  width: 100%;
+  position: relative;
+}
+
+.prev, .next
+{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next
+{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover
+{
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text
+{
+  color: black;
+  padding: 0px 90px 20px 90px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext
+{
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot
+{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: maroon;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot:hover
+{
+  background-color: black;
+}
+
+.fade
+{
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade
+{
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade
+{
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.button
+{
+  border: tomato solid;
+  color: tomato;
+  background-color: wheat;
+  padding: 3px 10px;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.button:hover
+{
+  border: black solid;
+  color: color;
+  background-color: antiquewhite;
+  padding: 4px 12px;
+}
+
+.homeButtonMargin
+{
+  margin: 25px;
+}
+
+.heading
+{
+  font-size: 40px;
+  font-family: Arial;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+h4
+{
+  margin: 10px;
+}
+.heading0
+{
+  font-size: 30px;
+  font-family: Arial;
+  font-weight: 700;
+  text-align: center;
+  margin: 10px;
+}
+
+.subtitle
+{
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.nContainer
+{
+  text-align: center;
+  padding: 44px;
+}
+
+.home
+{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.homeCard
+{
+  padding: 22px;
+  flex: 50%;
+}
+
+.pricing
+{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 17px;
+}
+
+.pricingCard
+{
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+  flex: 31%;
+  border-radius: 10px;
+  background-color: wheat;
+  box-shadow: 0px 0px 5px tomato;
+}
+
+.contact
+{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 17px;
+  color: black;
+}
+
+.contactCard {
+  padding: 22px;
+  flex: 50%;
+}
+
+.contactCard0 {
+  padding: 22px 22px 33px 22px;
+  flex: 50%;
+}
+  
+article
+{
+    background: antiquewhite;
+    width: 100%;
+    padding: 20px 20px 20px 20px;
+    position: relative;
+}
+
+article::after
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 11px;
+    width: 100%;
+    background: url(dabba/svg/contact.svg) bottom center;
+    background-size: 150%;
+}
+
+
+.nMobile
+{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sMobile
+{
+  margin: 0px 5px 10px 5px;
+  padding: 5px;
+  flex: 40%;
+  border-radius: 5px;
+  background-color: wheat;
+}
+
+@media (max-width : 750px)
+{
+
+  .prev, .next,.text {font-size: 11px}
+
+.text
+{
+  color: black;
+  padding: 0px;
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  text-align: center;
+}
+
+.navContainer
+  {
+    flex-direction : column;
+    align-items : flex-start;
+  }
+
+  nav
+  {
+    height : 0;
+    width : 100%;
+    overflow : hidden;
+    transition : 250ms height ease-in-out;
+  }
+
+  li
+  {
+    display : block;
+    text-align : center;
+    padding : 1.5rem 0;
+  }
+
+  li a
+  {
+    font-size : 1.4rem;
+  }
+
+  .nav-toggle
+  {
+    display : block;
+  }
+  .heading
+  {
+    font-size: 25px;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .subtitle
+  {
+    font-size: 16px;
+    padding: 0px;
+  }
+  
+.hide
+{
+  margin: 20px;
+  text-align: center;
+  display: block;
+}
+
+.show
+{
+  display: none;
+}
+
+  .nContainer
+  {
+    padding: 20px;
+  }
+  
+  .home
+  {
+    font-size: 15px;
+  }
+
+  .homeCard
+  {
+    padding: 7px;
+    flex: 100%;
+  }
+  
+  .homeButtonMargin
+  {
+    margin: 15px;
+  }
+  
+  .pricing
+  {
+    font-size: 16px;
+  }
+
+  .pricingCard
+  {
+    padding: 7px;
+    margin: 10px;
+    flex: 100%;
+  }
+  
+  .contact
+  {
+    font-size: 16px;
+  }
+
+  .contactCard
+  {
+    padding: 10px;
+    flex: 100%;
+  }
+
+  .sMobile
+  {
+    margin: 5px;
+    padding: 5px;
+    flex: 100%;
+    border: 2px solid ;
+  }
+ 
+}
